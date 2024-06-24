@@ -20,7 +20,7 @@ Feature: Manajemen farmer
 
   Scenario: User melihat detail farmer
     Given user berada di halaman daftar farmer
-    When user menekan nama farmer
+    When user menekan nama farmerjhghhgg
     Then user masuk ke halaman detail farmer
 
   Scenario: User dapat menghapus farmer
