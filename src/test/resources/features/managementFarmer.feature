@@ -28,3 +28,8 @@ Feature: Manajemen farmer
     When user menekan tombol delete
     Then muncul pesan pada halaman daftar farmer
 
+  Scenario: User dapat mengedit data farmer
+    Given user berada di halaman detail farmer
+    When user menekan tombol edit
+    And user mengubah data farmer
+    Then muncul pesan pada halaman daftar farmer
