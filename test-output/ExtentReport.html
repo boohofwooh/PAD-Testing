@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Automation Test Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun 25, 2024 09:59:27 AM</span></a>
+<a href="#"><span class="badge badge-primary">Jun 25, 2024 03:16:27 PM</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -81,7 +82,7 @@
           <div class="test-detail">
             <p class="name">Login Test</p>
             <p class="text-sm">
-              <span>9:59:29 AM</span> / <span>00:00:03:428</span>
+              <span>3:16:29 PM</span> / <span>00:00:00:000</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -90,10 +91,36 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">Login Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:29 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:33 AM</span>
-<span class='badge badge-default'>00:00:03:428</span>
+<span class='badge badge-success'>06.25.2024 3:16:29 PM</span>
+<span class='badge badge-danger'>06.25.2024 3:16:29 PM</span>
+<span class='badge badge-default'>00:00:00:000</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Management Farmer Test</p>
+            <p class="text-sm">
+              <span>3:16:31 PM</span> / <span>00:00:02:649</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">Management Farmer Test</h5>
+<span class='badge badge-success'>06.25.2024 3:16:31 PM</span>
+<span class='badge badge-danger'>06.25.2024 3:16:34 PM</span>
+<span class='badge badge-default'>00:00:02:649</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -104,58 +131,30 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:31 AM</td>
+        <td>3:16:33 PM</td>
         <td>
-          Navigating to login page
+          User attempting to log in as admin
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:32 AM</td>
+        <td>3:16:34 PM</td>
         <td>
-          Navigated to login page successfully
+          User logged in as admin
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:32 AM</td>
+        <td>3:16:34 PM</td>
         <td>
-          Entering email and password
+          User verifying they are on the dashboard page
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:32 AM</td>
+        <td>3:16:34 PM</td>
         <td>
-          Entered email: diego@gmail.com and password: 12345678
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:32 AM</td>
-        <td>
-          Clicking login button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:33 AM</td>
-        <td>
-          Login button clicked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:33 AM</td>
-        <td>
-          Verifying redirection to dashboard
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:33 AM</td>
-        <td>
-          User redirected to user dashboard successfully
+          User is on the dashboard page
         </td>
       </tr>
   </tbody>
@@ -163,51 +162,25 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="fail" test-id="3"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Management Farmer Test</p>
+            <p class="name">Management Sensor Test</p>
             <p class="text-sm">
-              <span>9:59:31 AM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>3:16:33 PM</span> / <span>00:00:01:157</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">Management Farmer Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:31 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:31 AM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="3"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Login Test</p>
-            <p class="text-sm">
-              <span>9:59:34 AM</span> / <span>00:00:02:915</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:34 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:37 AM</span>
-<span class='badge badge-default'>00:00:02:915</span>
+<h5 class="test-status text-fail">Management Sensor Test</h5>
+<span class='badge badge-success'>06.25.2024 3:16:33 PM</span>
+<span class='badge badge-danger'>06.25.2024 3:16:34 PM</span>
+<span class='badge badge-default'>00:00:01:157</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
@@ -219,865 +192,24 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:36 AM</td>
+        <td>3:16:34 PM</td>
         <td>
-          Navigating to login page
+          User clicking on daftar sensor in sidebar
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:36 AM</td>
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>3:16:34 PM</td>
         <td>
-          Navigated to login page successfully
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:36 AM</td>
-        <td>
-          Entering email and password
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:37 AM</td>
-        <td>
-          Entered email: AdminSmf@gmail.com and password: 12345678
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:37 AM</td>
-        <td>
-          Clicking login button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:37 AM</td>
-        <td>
-          Login button clicked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:37 AM</td>
-        <td>
-          Verifying redirection to dashboard
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:37 AM</td>
-        <td>
-          Admin redirected to admin dashboard successfully
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="4"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Management Farmer Test</p>
-            <p class="text-sm">
-              <span>9:59:36 AM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Management Farmer Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:36 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:36 AM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="5"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Login Test</p>
-            <p class="text-sm">
-              <span>9:59:39 AM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:39 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:39 AM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="6"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Management Farmer Test</p>
-            <p class="text-sm">
-              <span>9:59:40 AM</span> / <span>00:00:02:820</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Management Farmer Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:40 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:43 AM</span>
-<span class='badge badge-default'>00:00:02:820</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:40 AM</td>
-        <td>
-          User attempting to log in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:43 AM</td>
-        <td>
-          User logged in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:43 AM</td>
-        <td>
-          User verifying they are on the dashboard page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:43 AM</td>
-        <td>
-          User is on the dashboard page
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:43 AM</td>
-        <td>
-          User clicking on daftar farmer in sidebar
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:43 AM</td>
-        <td>
-          User clicked on daftar farmer in sidebar
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:43 AM</td>
-        <td>
-          Verifying that the daftar farmer table is displayed
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:43 AM</td>
-        <td>
-          Daftar farmer table is displayed on the page
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="7"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Login Test</p>
-            <p class="text-sm">
-              <span>9:59:44 AM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:44 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:44 AM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="8"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Management Farmer Test</p>
-            <p class="text-sm">
-              <span>9:59:46 AM</span> / <span>00:00:01:860</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Management Farmer Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:46 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:48 AM</span>
-<span class='badge badge-default'>00:00:01:860</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:46 AM</td>
-        <td>
-          User attempting to log in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:47 AM</td>
-        <td>
-          User logged in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:47 AM</td>
-        <td>
-          Navigating to halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:47 AM</td>
-        <td>
-          User is on halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:47 AM</td>
-        <td>
-          Entering name in searchbar: furina
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:48 AM</td>
-        <td>
-          Entered name in searchbar: furina
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:48 AM</td>
-        <td>
-          Verifying that farmer data is displayed for: furina
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:48 AM</td>
-        <td>
-          Farmer data displayed for: furina
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="9"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Login Test</p>
-            <p class="text-sm">
-              <span>9:59:49 AM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:49 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:49 AM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=9</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="10"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Management Farmer Test</p>
-            <p class="text-sm">
-              <span>9:59:51 AM</span> / <span>00:00:02:578</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Management Farmer Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:51 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:53 AM</span>
-<span class='badge badge-default'>00:00:02:578</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=10</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:51 AM</td>
-        <td>
-          User attempting to log in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:52 AM</td>
-        <td>
-          User logged in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:52 AM</td>
-        <td>
-          Navigating to halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:52 AM</td>
-        <td>
-          User is on halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:52 AM</td>
-        <td>
-          Clicking add button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:52 AM</td>
-        <td>
-          Add button clicked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:52 AM</td>
-        <td>
-          Entering farmer details: name=salma, email=salman@gmail.com, password=12345678, address=semarang
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:53 AM</td>
-        <td>
-          Entered farmer details
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:53 AM</td>
-        <td>
-          Verifying that user is redirected to halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:53 AM</td>
-        <td>
-          User redirected to halaman daftar farmer and farmer displayed: salma
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="11"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Login Test</p>
-            <p class="text-sm">
-              <span>9:59:54 AM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:54 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:54 AM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=11</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="12"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Management Farmer Test</p>
-            <p class="text-sm">
-              <span>9:59:56 AM</span> / <span>00:00:01:782</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Management Farmer Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:56 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:58 AM</span>
-<span class='badge badge-default'>00:00:01:782</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=12</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:56 AM</td>
-        <td>
-          User attempting to log in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:57 AM</td>
-        <td>
-          User logged in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:57 AM</td>
-        <td>
-          Navigating to halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:57 AM</td>
-        <td>
-          User is on halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:57 AM</td>
-        <td>
-          Clicking on farmer name
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:58 AM</td>
-        <td>
-          Farmer name clicked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>9:59:58 AM</td>
-        <td>
-          Verifying that user is on halaman detail farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>9:59:58 AM</td>
-        <td>
-          User is on halaman detail farmer
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="13"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Login Test</p>
-            <p class="text-sm">
-              <span>9:59:59 AM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login Test</h5>
-<span class='badge badge-success'>06.25.2024 9:59:59 AM</span>
-<span class='badge badge-danger'>06.25.2024 9:59:59 AM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=13</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="14"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Management Farmer Test</p>
-            <p class="text-sm">
-              <span>10:00:01 AM</span> / <span>00:00:02:593</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Management Farmer Test</h5>
-<span class='badge badge-success'>06.25.2024 10:00:01 AM</span>
-<span class='badge badge-danger'>06.25.2024 10:00:03 AM</span>
-<span class='badge badge-default'>00:00:02:593</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=14</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:01 AM</td>
-        <td>
-          User attempting to log in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:02 AM</td>
-        <td>
-          User logged in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:02 AM</td>
-        <td>
-          Navigating to halaman detail farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:02 AM</td>
-        <td>
-          Navigating to halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:02 AM</td>
-        <td>
-          User is on halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:02 AM</td>
-        <td>
-          Clicking on farmer name
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:03 AM</td>
-        <td>
-          Farmer name clicked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:03 AM</td>
-        <td>
-          User is on halaman detail farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:03 AM</td>
-        <td>
-          Clicking delete button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:03 AM</td>
-        <td>
-          Delete button clicked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:03 AM</td>
-        <td>
-          Verifying that message is displayed on halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:03 AM</td>
-        <td>
-          Message displayed on halaman daftar farmer
-        </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="15"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Login Test</p>
-            <p class="text-sm">
-              <span>10:00:05 AM</span> / <span>00:00:00:000</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Login Test</h5>
-<span class='badge badge-success'>06.25.2024 10:00:05 AM</span>
-<span class='badge badge-danger'>06.25.2024 10:00:05 AM</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=15</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div>          </div>
-        </li>
-        <li class="test-item"  status="pass" test-id="16"
-          author=""
-          tag=""
-          device="">
-          <div class="test-detail">
-            <p class="name">Management Farmer Test</p>
-            <p class="text-sm">
-              <span>10:00:06 AM</span> / <span>00:00:03:492</span>
-              <span class="badge pass-bg log float-right">Pass</span>
-            </p>
-          </div>
-          <div class="test-contents d-none">
-<div class="detail-head">
-<div class="p-v-10">
-<div class="info">
-<h5 class="test-status text-pass">Management Farmer Test</h5>
-<span class='badge badge-success'>06.25.2024 10:00:06 AM</span>
-<span class='badge badge-danger'>06.25.2024 10:00:10 AM</span>
-<span class='badge badge-default'>00:00:03:492</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=16</span>
-<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
-<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
-</div>
-</div>
-</div><div class="detail-body mt-4">
-<table class="table table-sm">
-  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
-  <tbody>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:06 AM</td>
-        <td>
-          User attempting to log in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:07 AM</td>
-        <td>
-          User logged in as admin
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:07 AM</td>
-        <td>
-          Navigating to halaman detail farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:07 AM</td>
-        <td>
-          Navigating to halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:08 AM</td>
-        <td>
-          User is on halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:08 AM</td>
-        <td>
-          Clicking on farmer name
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:08 AM</td>
-        <td>
-          Farmer name clicked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:08 AM</td>
-        <td>
-          User is on halaman detail farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:08 AM</td>
-        <td>
-          Clicking edit button
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:08 AM</td>
-        <td>
-          Edit button clicked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:08 AM</td>
-        <td>
-          User modifying farmer data
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:09 AM</td>
-        <td>
-          User data entered for modification
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:10 AM</td>
-        <td>
-          Save button clicked
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>10:00:10 AM</td>
-        <td>
-          Verifying that message is displayed on halaman daftar farmer
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>10:00:10 AM</td>
-        <td>
-          Message displayed on halaman daftar farmer
+          Failed to click on daftar sensor in sidebar: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="sidebar"]/div[2]/div/ul/li[4]/a"}
+  (Session info: chrome=126.0.6478.114)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.0', revision: '249f2a7d1b*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [30f9a74aca8762261720820348497c80, findElement {using=xpath, value=//*[@id="sidebar"]/div[2]/div/ul/li[4]/a}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.114, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\Lenovo\AppData\Loc...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49530}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49530/devtoo..., se:cdpVersion: 126.0.6478.114, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 30f9a74aca8762261720820348497c80
         </td>
       </tr>
   </tbody>
@@ -1099,25 +231,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun 25, 2024 09:59:27 AM</h3>
+<h3>Jun 25, 2024 03:16:27 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun 25, 2024 10:00:10 AM</h3>
+<h3>Jun 25, 2024 03:16:34 PM</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>16</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -1133,12 +265,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>16</b> tests passed
+<div><small data-tooltip='66%'>
+<b>2</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='33%'><b>1</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -1156,10 +288,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>39</b> events passed</small></div>
+<div><small data-tooltip='33%'><b>2</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>38</b> others
+<small data-tooltip='16%'><b>1</b> events failed,
+<b data-tooltip='%'>3</b> others
 </small>
 </div>
 </div>
@@ -1175,7 +307,7 @@
 </div></div>
 <script>
 var timeline = {
-"Login Test":3.428,"Management Farmer Test":0,"Login Test":2.915,"Management Farmer Test":0,"Login Test":0,"Management Farmer Test":2.82,"Login Test":0,"Management Farmer Test":1.86,"Login Test":0,"Management Farmer Test":2.578,"Login Test":0,"Management Farmer Test":1.782,"Login Test":0,"Management Farmer Test":2.593,"Login Test":0,"Management Farmer Test":3.492
+"Login Test":0,"Management Farmer Test":2.649,"Management Sensor Test":1.157
 };
 </script>
 <div class="row">
@@ -1202,8 +334,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 16,
-failParent: 0,
+passParent: 2,
+failParent: 1,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -1219,11 +351,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 39,
-failEvents: 0,
+passEvents: 2,
+failEvents: 1,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 38
+infoEvents: 3
 };
 </script>        </div>
       </div>

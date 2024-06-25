@@ -9,6 +9,9 @@ public class DashboardAdminPage {
     private By sidebarDaftarFarmer = new By.ByXPath("//*[@id=\"sidebar\"]/div[2]/div/ul/li[2]/a");
     private By sidebarDaftarLahan = new By.ByXPath("//*[@id=\"sidebar\"]/div[2]/div/ul/li[3]/a");
     private By sidebarDaftarSensor = new By.ByXPath("//*[@id=\"sidebar\"]/div[2]/div/ul/li[4]/a");
+    private By accountBtn = new By.ByXPath("//*[@id=\"sidebar\"]/div[3]");
+    private By accountName = new By.ByXPath("//*[@id=\"animatedRectangle\"]/div/form/button/div");
+    private By logout = new By.ByXPath("//*[@id=\"animatedRectangle\"]/div/div/form/a");
 
     WebDriver driver;
 
@@ -34,5 +37,17 @@ public class DashboardAdminPage {
     public void clickSidebarDaftarSensor(){
         WebElement element = driver.findElement(sidebarDaftarSensor);
         element.click();
+    }
+
+    public void accountBtnClick(){
+        driver.findElement(accountBtn).click();
+    }
+
+    public void accountNameClick(){
+        driver.findElement(accountName).click();
+    }
+
+    public void logoutClick(){
+        driver.findElement(logout).submit();
     }
 }

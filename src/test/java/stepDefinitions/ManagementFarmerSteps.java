@@ -15,10 +15,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import page.DaftarFarmerPage;
-import page.DashboardAdminPage;
-import page.DetailFarmerPage;
-import page.LoginPage;
+import page.*;
 
 import java.time.Duration;
 import java.util.List;
@@ -29,6 +26,7 @@ public class ManagementFarmerSteps {
     DashboardAdminPage dashboardAdminPage;
     DaftarFarmerPage daftarFarmerPage;
     DetailFarmerPage detailFarmerPage;
+    DaftarSensorPage daftarSensorPage;
     ExtentReports extent;
     ExtentTest test;
 
@@ -41,6 +39,7 @@ public class ManagementFarmerSteps {
         dashboardAdminPage = new DashboardAdminPage(driver);
         daftarFarmerPage = new DaftarFarmerPage(driver);
         detailFarmerPage = new DetailFarmerPage(driver);
+        daftarSensorPage = new DaftarSensorPage(driver);
         test = extent.createTest("Management Farmer Test");
     }
 
@@ -272,7 +271,7 @@ public class ManagementFarmerSteps {
     public void user_mengubah_data_farmer() {
         try {
             test.info("User modifying farmer data");
-            detailFarmerPage.editUser("momon", "momo@gmail.com", "12345678", "bandungan");
+            detailFarmerPage.editUser("momon", "momos@gmail.com", "12345678", "bandungan");
             test.pass("User data entered for modification");
 
             detailFarmerPage.saveBtnClicked();
@@ -283,4 +282,28 @@ public class ManagementFarmerSteps {
             throw e;
         }
     }
+
+    @When("user menekan tombol akun pada sidebar")
+    public void user_menekan_tombol_akun_pada_sidebar(){
+        test.info("User clicks on account button in sidebar");
+        dashboardAdminPage.accountBtnClick();
+        test.pass("Account button clicked");
+    }
+
+    @And("user menekan logout")
+    public void user_menekan_logout(){
+        test.info("User clicks on logout button");
+        dashboardAdminPage.logoutClick();
+        test.pass("Logout button clicked");
+    }
+
+    @Then("user kembali ke halaman login")
+    public void user_kembali_ke_halaman_login(){
+        test.info("Verifying user is redirected to login page");
+        Assertions.assertTrue(driver.getCurrentUrl().contains("/login"));
+        test.pass("User is redirected to login page");
+    }
+
+
+
 }
