@@ -282,28 +282,4 @@ public class ManagementFarmerSteps {
             throw e;
         }
     }
-
-    @When("user menekan tombol akun pada sidebar")
-    public void user_menekan_tombol_akun_pada_sidebar(){
-        test.info("User clicks on account button in sidebar");
-        dashboardAdminPage.accountBtnClick();
-        test.pass("Account button clicked");
-    }
-
-    @And("user menekan logout")
-    public void user_menekan_logout(){
-        test.info("User clicks on logout button");
-        dashboardAdminPage.logoutClick();
-        test.pass("Logout button clicked");
-    }
-
-    @Then("user kembali ke halaman login")
-    public void user_kembali_ke_halaman_login(){
-        test.info("Verifying user is redirected to login page");
-        Assertions.assertTrue(driver.getCurrentUrl().contains("/login"));
-        test.pass("User is redirected to login page");
-    }
-
-
-
 }
