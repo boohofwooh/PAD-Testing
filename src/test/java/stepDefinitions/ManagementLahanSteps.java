@@ -51,9 +51,15 @@ public class ManagementLahanSteps {
 
     @Given("user adalah admin")
     public void user_adalah_admin(){
-        loginPage.fillEmail("AdminSmf@gmail.com");
-        loginPage.fillPassword("12345678");
-        loginPage.clickLogin();
+        try {
+            loginPage.fillEmail("AdminSmf@gmail.com");
+            loginPage.fillPassword("12345678");
+            loginPage.clickLogin();
+            test.pass("User logged in as admin");
+        } catch (Exception e) {
+            test.fail("User failed to log in as admin: " + e.getMessage());
+            throw e;
+        }
     }
 
     @When("user menekan daftar lahan pada sidebar")

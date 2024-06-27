@@ -18,6 +18,6 @@ public class LoginObject {
     }
 
     public By getLoginButton(){
-        return By.id("btn-login");
+        return By.xpath("//*[@id=\"loginForm\"]/button");
     }
 }

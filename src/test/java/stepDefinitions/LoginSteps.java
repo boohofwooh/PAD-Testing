@@ -2,39 +2,28 @@ package stepDefinitions;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
+
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.jupiter.api.Assertions;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
 import page.LoginPage;
 
 public class LoginSteps {
-    WebDriver driver;
+    WebDriver driver = Hooks.getDriver();
     LoginPage loginPage;
     String currentUserEmail;
-    ExtentReports extent;
+    ExtentReports extent = Hooks.getExtent();
     ExtentTest test;
 
-    @Before
-    public void setUp() {
-        extent = ExtentReportManager.getInstance();
-        driver = new ChromeDriver();
+    public LoginSteps() {
         loginPage = new LoginPage(driver);
         test = extent.createTest("Login Test");
+        Hooks.setTest(test);
     }
 
-    @After
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-        extent.flush();
-    }
 
     @Given("user berada di halaman login")
     public void user_berada_di_halaman_login() {

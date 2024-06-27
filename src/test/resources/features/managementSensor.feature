@@ -13,8 +13,8 @@ Feature: Manajemen Sensor
 
   Scenario: User dapat mencari sensor
     Given user berada di halaman daftar sensor
-    When user memasukkan id sensor "S044" pada searchbar
-    Then data id sensor "S044" ditampilkan
+    When user memasukkan id sensor "S009" pada searchbar
+    Then data id sensor "S009" ditampilkan
 
   Scenario: User dapat melihat detail sensor
     Given user berada di halaman daftar sensor

@@ -21,40 +21,30 @@ import java.time.Duration;
 import java.util.List;
 
 public class ManagementFarmerSteps {
-    WebDriver driver;
+    WebDriver driver = Hooks.getDriver();
     LoginPage loginPage;
     DashboardAdminPage dashboardAdminPage;
     DaftarFarmerPage daftarFarmerPage;
     DetailFarmerPage detailFarmerPage;
     DaftarSensorPage daftarSensorPage;
-    ExtentReports extent;
+    ExtentReports extent = Hooks.getExtent();
     ExtentTest test;
 
-    @Before
-    public void setUp() {
-        extent = ExtentReportManager.getInstance();
-        driver = new ChromeDriver();
-        driver.get("http://127.0.0.1:8000/login"); // Replace with your website URL
+    public ManagementFarmerSteps() {
         loginPage = new LoginPage(driver);
         dashboardAdminPage = new DashboardAdminPage(driver);
         daftarFarmerPage = new DaftarFarmerPage(driver);
         detailFarmerPage = new DetailFarmerPage(driver);
         daftarSensorPage = new DaftarSensorPage(driver);
         test = extent.createTest("Management Farmer Test");
-    }
-
-    @After
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-        extent.flush();
+        Hooks.setTest(test);
     }
 
     @Given("User login sebagai admin")
     public void user_login_sebagai_admin() {
         try {
             test.info("User attempting to log in as admin");
+            driver.get("http://127.0.0.1:8000/login");
             loginPage.fillEmail("AdminSmf@gmail.com");
             loginPage.fillPassword("12345678");
             loginPage.clickLogin();
@@ -133,9 +123,9 @@ public class ManagementFarmerSteps {
         try {
             test.info("Verifying that farmer data is displayed for: " + name);
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("table-farmer")));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div[2]/main/div/div[2]/div[2]/table")));
 
-            List<WebElement> farmerNames = driver.findElements(By.xpath("//*[@id='table-farmer']/tbody/tr/td[2]/form/button/div/p"));
+            List<WebElement> farmerNames = driver.findElements(By.xpath("/html/body/div/div[2]/main/div/div[2]/div[2]/table/tbody/tr[1]/td[2]/form/button/div/p"));
             boolean isFarmerDisplayed = farmerNames.stream()
                     .anyMatch(element -> element.getText().equalsIgnoreCase(name));
 
@@ -176,9 +166,9 @@ public class ManagementFarmerSteps {
         try {
             test.info("Verifying that user is redirected to halaman daftar farmer");
             WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("table-farmer")));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("/html/body/div/div[2]/main/div/div[2]/div[2]/table")));
 
-            List<WebElement> farmerNames = driver.findElements(By.xpath("//*[@id='table-farmer']/tbody/tr/td[2]/form/button/div/p"));
+            List<WebElement> farmerNames = driver.findElements(By.xpath("/html/body/div/div[2]/main/div/div[2]/div[2]/table/tbody/tr[1]/td[2]/form/button/div/p"));
             boolean isFarmerDisplayed = farmerNames.stream()
                     .anyMatch(element -> element.getText().equalsIgnoreCase(name));
 

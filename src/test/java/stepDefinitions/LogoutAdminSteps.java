@@ -15,34 +15,23 @@ import page.DashboardAdminPage;
 import page.LoginPage;
 
 public class LogoutAdminSteps {
-    WebDriver driver;
+    WebDriver driver = Hooks.getDriver();
     LoginPage loginPage;
     DashboardAdminPage dashboardAdminPage;
-    ExtentReports extent;
+    ExtentReports extent = Hooks.getExtent();
     ExtentTest test;
 
-    @Before
-    public void setUp() {
-        extent = ExtentReportManager.getInstance();
-        driver = new ChromeDriver();
+    public LogoutAdminSteps() {
         loginPage = new LoginPage(driver);
-        driver.get("http://127.0.0.1:8000/login"); // Replace with your website URL
         dashboardAdminPage = new DashboardAdminPage(driver);
         test = extent.createTest("Logout Admin Test");
+        Hooks.setTest(test);
     }
-
-    @After
-    public void tearDown() {
-        if (driver != null) {
-            driver.quit();
-        }
-        extent.flush();
-    }
-
     @Given("user merupakan admin")
     public void user_merupakan_admin() {
         try {
             test.info("User attempting to log in as admin");
+            driver.get("http://127.0.0.1:8000/login"); // Replace with your website URL
             loginPage.fillEmail("AdminSmf@gmail.com");
             loginPage.fillPassword("12345678");
             loginPage.clickLogin();
